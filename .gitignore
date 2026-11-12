@@ -1,0 +1,60 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Receipts output and local stores
+receipts/
+*.pdf
+.receipts_store/
+
+# Scratch & IDE
+.vscode/
+.idea/
+scratch/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Internal phase audit reports, workspace briefs, and unpublished drafts
+PHASE_*.md
+GITHUB_REPOSITORY_FINAL_AUDIT.md
+RELEASE_NOTES_v1.0.0_DRAFT.md
+agent-token-receipt-project-brief.md
+docs/DISCOVERY_REPORT.md
+

@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agent-token-receipt"
+version = "0.2.0"
+description = "Universal, local-first AI coding agent usage receipt generator"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+    { name = "Swaraj Talekar" }
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Utilities",
+]
+dependencies = [
+    "pydantic>=2.0.0",
+    "fpdf2>=2.8.0",
+    "click>=8.0.0"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0"
+]
+
+[project.scripts]
+agent-token-receipt = "cli.main:cli"
+agent-receipt = "cli.main:cli"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["agent_token_receipt*", "cli*", "collector*", "core*", "pricing*", "generator*"]
+
+[tool.setuptools.package-data]
+pricing = ["*.json"]
